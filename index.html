@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>楽しく続く、女性専用フィットネス | ARVO和歌山</title>
+<meta name="description" content="ARVO和歌山は「楽しく続く」を大切にした女性専用フィットネススタジオ。ピラティス・ヨガ・ダンス系レッスンとピラティスパーソナル。体験1回4,400円。LINEからご予約いただけます。">
+<meta property="og:title" content="楽しく続く、女性専用フィットネス | ARVO和歌山">
+<meta property="og:description" content="続けなきゃ、から。また行きたい、へ。ピラティスパーソナル体験1回4,400円。">
+<meta property="og:image" content="assets/yoga.webp">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#241d18">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--
+  ▼ リンク設定（ここだけ差し替えればページ全体に反映されます）
+  LINE（フィットネス体験予約）: js/main.js の LINKS.line
+-->
+<a class="skip" href="#main">本文へ移動</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-out" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-line" viewBox="0 0 24 24"><path d="M12 3.5C6.5 3.5 2 7.1 2 11.6c0 4 3.6 7.4 8.4 8 .3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5 1.1-.5 5.9-3.5 8-6 1.5-1.6 2-3.2 2-4.9 0-4.5-4.5-8.1-10.1-8.1Z" fill="#fff"/><path d="M6.6 9.6v4.2h2.6M10.6 9.6v4.2M12.6 13.8V9.6l2.8 4.2V9.6M19 9.6h-2.4v4.2H19M16.6 11.7H19" fill="none" stroke="#06c755" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor"/></symbol>
+  <symbol id="i-smile" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 14.5c1 1.4 2.4 2.1 4 2.1s3-.7 4-2.1M9 9.5h.01M15 9.5h.01" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+  <symbol id="i-body" viewBox="0 0 24 24"><circle cx="12" cy="4.8" r="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 9.5h14M12 9.5v5M12 14.5l-3.5 6M12 14.5l3.5 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3.5 10h17M8 3v4M16 3v4M9 14.5l2 2 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+</svg>
+
+<!-- ===== HEADER ===== -->
+<header class="hd" id="hd">
+  <div class="wrap hd-in">
+    <a class="logo" href="#top" aria-label="ARVO FITNESS / WAKAYAMA トップへ"><b>ARVO</b><small>FITNESS / WAKAYAMA</small></a>
+    <button class="menu-btn" id="menuBtn" aria-label="メニューを開く" aria-expanded="false" aria-controls="nav"><svg><use href="#i-menu"/></svg></button>
+    <nav class="nav" id="nav" aria-label="メインメニュー">
+      <a href="#about">ARVOについて</a>
+      <a href="#lessons">レッスン</a>
+      <a href="#price">料金</a>
+      <a href="#smile">ホワイトニング</a>
+      <a href="#faq">Q&amp;A</a>
+      <a class="btn btn--line" data-link="line" href="#" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-line"/></svg>LINEで体験予約<span class="chip"><svg aria-hidden="true"><use href="#i-out"/></svg></span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<!-- ===== HERO ===== -->
+<section class="hero" id="top">
+  <img class="hero-bg" src="assets/yoga.webp" alt="" fetchpriority="high">
+  <div class="wrap">
+    <p class="hero-tag"><span>女性専用フィットネススタジオ</span><span class="en">MOVE. SMILE. REPEAT.</span></p>
+    <h1>続けなきゃ、から。<br><em>また行きたい、へ。</em></h1>
+    <p class="hero-lead">姿勢やフォームを、自分のペースで相談。<br>マシンピラティスも、マンツーマンも。</p>
+    <p class="hero-offer"><span class="lbl">ピラティスパーソナル体験</span><span class="price">4,400<small>円 / 1回</small></span><span class="sub">お一人様1回まで</span></p>
+    <div class="btn-row">
+      <a class="btn btn--line btn--lg" data-link="line" href="#" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-line"/></svg>LINEで体験を予約する<span class="chip"><svg aria-hidden="true"><use href="#i-out"/></svg></span></a>
+      <a class="btn btn--ghost-lt btn--lg" href="#check">私に合う楽しみ方を探す<span class="chip"><svg aria-hidden="true"><use href="#i-down"/></svg></span></a>
+    </div>
+    <a class="hero-sub-link" href="https://arvo-4ef22.web.app/" target="_blank" rel="noopener">笑顔もととのえる、ARVOのセルフホワイトニング<svg width="16" height="16" aria-hidden="true"><use href="#i-out"/></svg></a>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="marquee-in">
+  <span>FIND YOUR RHYTHM.</span><span>●</span><span>楽しく動く。自分が変わる。</span><span>●</span><span>PILATES / YOGA / DANCE</span><span>●</span><span>MOVE. SMILE. REPEAT.</span><span>●</span>
+  <span>FIND YOUR RHYTHM.</span><span>●</span><span>楽しく動く。自分が変わる。</span><span>●</span><span>PILATES / YOGA / DANCE</span><span>●</span><span>MOVE. SMILE. REPEAT.</span><span>●</span>
+</div></div>
+
+<!-- ===== ABOUT ===== -->
+<section class="sec" id="about">
+  <div class="wrap about-grid">
+    <figure class="about-img rv" style="margin:0"><img src="assets/team.webp" alt="ARVOのインストラクター" loading="lazy"></figure>
+    <div class="about-body rv">
+      <p class="eyebrow">01 / ABOUT US</p>
+      <h2 class="h2">運動が得意な人だけの<br>場所には、したくない。</h2>
+      <p class="lead">できるかどうかより、楽しめるかどうか。</p>
+      <div style="margin-top:24px">
+        <p>ARVO和歌山は、「楽しく続く」を大切にした女性専用フィットネススタジオです。</p>
+        <p>ピラティス・ヨガ・ダンス系レッスンを中心に、姿勢改善・引き締め・健康づくりをサポート。マシンピラティスやマンツーマンのトレーニングもご用意しています。</p>
+        <p>運動が苦手な方も、初めての方も。あなたに合った動き方を、一緒に見つけていきます。</p>
+      </div>
+      <div class="points">
+        <div class="point"><span class="n">01</span><p>グループも<br>パーソナルも</p></div>
+        <div class="point"><span class="n">02</span><p>初心者から<br>始められる</p></div>
+        <div class="point"><span class="n">03</span><p>一人ひとりに<br>合わせた提案</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CHECK ===== -->
+<section class="sec check" id="check">
+  <div class="wrap check-grid">
+    <div class="rv">
+      <p class="eyebrow">02 / FIND YOUR START</p>
+      <h2 class="h2">「私のことだ」<br>が、はじめる合図。</h2>
+      <p class="lead">今の気持ちに近いものをタップ。当てはまるものだけでOKです。</p>
+      <ul class="check-list" style="margin-top:30px">
+        <li class="check-item"><input type="checkbox" id="c1" data-hint="group"><label for="c1"><span class="box"><svg><use href="#i-check"/></svg></span>ひとりで運動を始めても、続かない。</label></li>
+        <li class="check-item"><input type="checkbox" id="c2" data-hint="personal"><label for="c2"><span class="box"><svg><use href="#i-check"/></svg></span>姿勢や身体のラインが気になっている。</label></li>
+        <li class="check-item"><input type="checkbox" id="c3" data-hint="both"><label for="c3"><span class="box"><svg><use href="#i-check"/></svg></span>運動が苦手。何から始めればいいかわからない。</label></li>
+        <li class="check-item"><input type="checkbox" id="c4" data-hint="group"><label for="c4"><span class="box"><svg><use href="#i-check"/></svg></span>音楽や仲間と一緒なら、楽しめそう。</label></li>
+        <li class="check-item"><input type="checkbox" id="c5" data-hint="personal"><label for="c5"><span class="box"><svg><use href="#i-check"/></svg></span>フォームが合っているか、個別に見てほしい。</label></li>
+      </ul>
+      <p class="note">医学的な診断ではありません。</p>
+    </div>
+    <aside class="result rv" aria-live="polite">
+      <p class="count"><span id="cnt">0</span><small>/ 5 SELECTED</small></p>
+      <h3 id="resTitle">あなたの「続けられそう」を探そう。</h3>
+      <p id="resText">気になる項目を選ぶと、レッスン選びのヒントが表示されます。</p>
+      <div class="btn-row">
+        <a class="btn btn--line btn--block" data-link="line" href="#" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-line"/></svg>LINEで相談・体験予約<span class="chip"><svg aria-hidden="true"><use href="#i-out"/></svg></span></a>
+        <a class="btn btn--ghost-lt btn--block" href="#lessons">レッスンを見てみる<span class="chip"><svg aria-hidden="true"><use href="#i-down"/></svg></span></a>
+      </div>
+      <button class="reset" id="reset" type="button">選択をリセット</button>
+    </aside>
+  </div>
+</section>
+
+<!-- ===== LESSONS ===== -->
+<section class="sec" id="lessons">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <p class="eyebrow">03 / TWO WAYS TO MOVE</p>
+      <h2 class="h2">みんなと弾む。<br>自分と向き合う。</h2>
+      <p class="lead">その日の気分も、目指す身体も違うから。グループとパーソナル、両方から選べます。</p>
+    </div>
+    <div class="lessons">
+      <article class="lesson rv">
+        <div class="lesson-img"><img src="assets/group.webp" alt="グループで楽しく身体を動かすレッスン" loading="lazy"></div>
+        <div class="lesson-body">
+          <p class="tag">01 / GROUP — PILATES・YOGA・DANCE</p>
+          <h3>グループレッスン</h3>
+          <p class="catch">楽しく動いて、しっかり燃やす。</p>
+          <p class="desc">ひとりでは続かなかった運動も、みんなとなら違う楽しさに。ピラティス・ヨガ・ダンス系レッスンから、身体を動かすきっかけを。</p>
+          <a class="btn btn--dark" href="#price-group">グループの料金を見る<span class="chip"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+        </div>
+      </article>
+      <article class="lesson rv">
+        <div class="lesson-img"><img src="assets/fitness.webp" alt="ダンベルを使ったトレーニング" loading="lazy"></div>
+        <div class="lesson-body">
+          <p class="tag">02 / PERSONAL — ONE ON ONE</p>
+          <h3>ピラティスパーソナル</h3>
+          <p class="catch">身体の使い方を、自分のペースで。</p>
+          <p class="desc">マシンピラティスも、マンツーマンのトレーニングも。フォームや姿勢が気になる方へ、一人ひとりに合わせた運動をご提案します。</p>
+          <a class="btn" href="#price-personal">パーソナルの料金を見る<span class="chip"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STEPS ===== -->
+<section class="sec steps-band">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">A LITTLE MOVEMENT, A NEW ROUTINE.</p>
+      <h2 class="h2">身体を動かす時間が、<br>楽しみな予定になる。</h2>
+      <p class="lead">姿勢を整えたい。身体を引き締めたい。健康のために、何かを始めたい。その想いを「楽しく続く」習慣へ。</p>
+    </div>
+    <div class="steps">
+      <div class="step rv"><span class="n">01</span><h3>「苦手」を、そのまま話す。</h3><p>運動が初めてでも、フォームに自信がなくても。今の悩みから一緒に考えます。</p></div>
+      <div class="step rv"><span class="n">02</span><h3>続けたくなる動きを、選ぶ。</h3><p>グループとパーソナル、目指したい身体と続けやすい通い方を一緒に選びます。</p></div>
+      <div class="step rv"><span class="n">03</span><h3>目指したい身体へ、積み重ねる。</h3><p>楽しく通ううちに、身体を動かす時間が毎日の楽しみに変わっていきます。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRICE ===== -->
+<section class="sec" id="price">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <p class="eyebrow">04 / LESSON &amp; PRICE</p>
+      <h2 class="h2">はじめの一回から。<br>あなたのペースで。</h2>
+      <p class="lead">目的と通い方に合わせて選べるプラン。</p>
+    </div>
+    <div class="price-grid">
+      <div class="pcard rv" id="price-personal">
+        <p class="tag">PERSONAL PILATES</p>
+        <h3>ピラティスパーソナル</h3>
+        <div class="trial">
+          <p class="lbl">体験価格 / 1回<small>お一人様1回まで</small></p>
+          <p class="val">4,400<small>円</small></p>
+        </div>
+        <table class="ptable">
+          <tr><th>通常 / 1回</th><td>8,800<small>円</small></td></tr>
+          <tr><th>4回券<small>2ヶ月有効 / 1回あたり8,360円</small></th><td>33,440<small>円</small></td></tr>
+          <tr><th>8回券<small>3ヶ月有効 / 1回あたり7,480円</small></th><td>59,840<small>円</small></td></tr>
+          <tr><th>12回券<small>5ヶ月有効 / 1回あたり7,040円</small></th><td>84,480<small>円</small></td></tr>
+        </table>
+        <a class="btn btn--line btn--block btn--lg" data-link="line" href="#" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-line"/></svg>LINEで体験を予約する<span class="chip"><svg aria-hidden="true"><use href="#i-out"/></svg></span></a>
+      </div>
+      <div class="pcard rv" id="price-group">
+        <p class="tag">GROUP LESSON</p>
+        <h3>グループレッスン</h3>
+        <p class="lead" style="margin-top:10px">まずは少しずつ。慣れてきたら、もっと自由に。</p>
+        <div class="group-plans">
+          <div class="gplan"><div><b>ライトプラン</b><span>6回チケット</span></div><p class="v">5,960<small>円</small></p></div>
+          <div class="gplan"><div><b>ベーシックプラン</b><span>15回チケット</span></div><p class="v">9,570<small>円</small></p></div>
+          <div class="gplan is-best"><div><b>マスタープラン</b><span>受け放題</span></div><p class="v">12,800<small>円</small></p></div>
+        </div>
+        <a class="btn btn--ghost btn--block" data-link="line" href="#" target="_blank" rel="noopener">自分に合うプランをLINEで相談<span class="chip"><svg aria-hidden="true"><use href="#i-out"/></svg></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FITNESS × WHITENING ===== -->
+<section class="sec smile" id="smile">
+  <div class="wrap">
+    <div class="smile-head">
+      <div class="rv">
+        <p class="eyebrow">05 / MOVE &amp; SMILE</p>
+        <p class="smile-big" aria-hidden="true"><span>MOVE.</span><span class="o">SMILE.</span><span>REPEAT.</span></p>
+      </div>
+      <div class="rv">
+        <h2 class="h2">整えた身体に、<br>いちばんの笑顔を。</h2>
+        <p class="lead">姿勢が変わると、表情も変わる。ARVOは、身体を動かす楽しさと、自信をもって笑える口元の両方を応援しています。フィットネスと一緒に、セルフホワイトニングもはじめてみませんか。</p>
+      </div>
+    </div>
+    <div class="synergy">
+      <div class="syn rv"><span class="ic"><svg aria-hidden="true"><use href="#i-body"/></svg></span><h3>姿勢 × 口元で、<br>第一印象をアップ</h3><p>すっと伸びた背筋と、明るい口元。見た目の印象をつくる2つを、同時に整えられます。</p></div>
+      <div class="syn rv"><span class="ic"><svg aria-hidden="true"><use href="#i-smile"/></svg></span><h3>写真に写る自分が、<br>もっと好きになる</h3><p>引き締まったラインに、思い切り笑える自信を。レッスン仲間との写真も楽しみに。</p></div>
+      <div class="syn rv"><span class="ic"><svg aria-hidden="true"><use href="#i-cal"/></svg></span><h3>「通う習慣」を、<br>まとめてつくる</h3><p>運動もホワイトニングも、続けることが大切。通いやすい料金設定で、習慣にしやすいのも共通点です。</p></div>
+    </div>
+    <div class="wh-card rv">
+      <div>
+        <p class="tag">ARVO SELF WHITENING</p>
+        <h3>セルフホワイトニング<br>初回お試し体験</h3>
+        <p>カウンセリング＋施術込み。無理な回数券・勧誘はありません。男性の方もご利用いただけます。</p>
+        <p class="wh-price"><s>通常 4,950円</s><b>¥0</b><small>※回数券購入で初回無料</small></p>
+      </div>
+      <a class="btn btn--lg" href="https://arvo-4ef22.web.app/" target="_blank" rel="noopener">ホワイトニングを詳しく見る<span class="chip"><svg aria-hidden="true"><use href="#i-out"/></svg></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VOICE ===== -->
+<section class="sec" id="voices">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <p class="eyebrow">06 / VOICE</p>
+      <h2 class="h2">続けた先に、<br>こんな声がありました。</h2>
+    </div>
+    <div class="voices">
+      <article class="voice rv"><p class="tag">VOICE / 01</p><h3>運動が苦手だった私も。</h3><p>「運動が苦手でしたが、レッスンが楽しくて自然と通えるようになりました。気づけば体型も変わり、周りから褒められることが増えました。」</p></article>
+      <article class="voice rv"><p class="tag">VOICE / 02</p><h3>姿勢から、毎日が変わった。</h3><p>「マシンピラティスで姿勢が改善され、見た目が大きく変わりました。腰痛も楽になり、日常生活がとても快適になりました。」</p></article>
+      <article class="voice rv"><p class="tag">VOICE / 03</p><h3>自分に合う組み合わせで。</h3><p>「グループとパーソナルを組み合わせることで効率よく結果が出ています。今まで通った中で一番変化を実感できるスタジオです。」</p></article>
+    </div>
+    <p class="note center">掲載の声は個人の感想であり、効果や変化には個人差があります。</p>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="sec check" id="faq">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <p class="eyebrow">07 / Q&amp;A</p>
+      <h2 class="h2">はじめる前の、<br>気になること。</h2>
+    </div>
+    <div class="faq rv">
+      <details><summary><span class="q">Q01</span>運動が苦手でも始められますか？<span class="pm"><svg aria-hidden="true"><use href="#i-plus"/></svg></span></summary><p class="a">ARVO和歌山は「楽しく続く」を大切にした女性専用フィットネススタジオです。運動が苦手な方や初心者の方も、一人ひとりに合わせた運動の提案を受けながら始められます。</p></details>
+      <details><summary><span class="q">Q02</span>どんなレッスンがありますか？<span class="pm"><svg aria-hidden="true"><use href="#i-plus"/></svg></span></summary><p class="a">ピラティス・ヨガ・ダンス系レッスンを中心に、姿勢改善・引き締め・健康づくりをサポートしています。グループレッスンと、マシンピラティスを含むマンツーマンのトレーニングに対応しています。</p></details>
+      <details><summary><span class="q">Q03</span>グループとパーソナル、両方利用できますか？<span class="pm"><svg aria-hidden="true"><use href="#i-plus"/></svg></span></summary><p class="a">両方に対応しています。みんなと楽しく動くグループレッスンと、個別に身体と向き合うパーソナルを、ご自身の目的に合わせてご検討いただけます。</p></details>
+      <details><summary><span class="q">Q04</span>ピラティスパーソナルの体験料金はいくらですか？<span class="pm"><svg aria-hidden="true"><use href="#i-plus"/></svg></span></summary><p class="a">体験は1回4,400円、お一人様1回までです。通常は1回8,800円。4回・8回・12回の回数券もあります。</p></details>
+      <details><summary><span class="q">Q05</span>グループレッスンの料金を教えてください。<span class="pm"><svg aria-hidden="true"><use href="#i-plus"/></svg></span></summary><p class="a">ライトプランは6回チケット5,960円、ベーシックプランは15回チケット9,570円、マスタープランは受け放題12,800円です。</p></details>
+      <details><summary><span class="q">Q06</span>体験の予約はどうすればいいですか？<span class="pm"><svg aria-hidden="true"><use href="#i-plus"/></svg></span></summary><p class="a">LINE公式アカウントを友だち追加し、トークからご希望の日時をお送りください。空き状況を確認のうえ、スタジオからご返信いたします。</p></details>
+      <details><summary><span class="q">Q07</span>ホワイトニングも利用できますか？<span class="pm"><svg aria-hidden="true"><use href="#i-plus"/></svg></span></summary><p class="a">はい。ARVOではセルフホワイトニングもご用意しています。料金やご予約は<a href="https://arvo-4ef22.web.app/" target="_blank" rel="noopener">ホワイトニング専用ページ</a>をご覧ください。</p></details>
+      <details><summary><span class="q">Q08</span>スタジオはどこにありますか？<span class="pm"><svg aria-hidden="true"><use href="#i-plus"/></svg></span></summary><p class="a">〒641-0007 和歌山県和歌山市小雑賀805−1、オークワセントラルシティ内です。</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA (LINE) ===== -->
+<section class="sec cta" id="contact">
+  <img class="cta-bg" src="assets/welcome.webp" alt="" loading="lazy">
+  <div class="wrap cta-box">
+    <div class="rv">
+      <p class="eyebrow">YOUR FIRST STEP</p>
+      <h2 class="h2">うまく説明できなくても、<br>大丈夫。</h2>
+      <p class="lead">体験のご予約・ご相談は、LINE公式アカウントから。気になるレッスンや今の悩みを、そのまま送ってください。</p>
+      <ol class="flow">
+        <li><b>1</b>LINEで友だち追加</li>
+        <li><b>2</b>希望日・気になるレッスンを送信</li>
+        <li><b>3</b>スタジオから返信で予約確定</li>
+      </ol>
+    </div>
+    <div class="cta-card rv">
+      <div class="trial">
+        <p class="lbl">ピラティスパーソナル体験<small>お一人様1回まで</small></p>
+        <p class="val">4,400<small>円</small></p>
+      </div>
+      <a class="btn btn--line btn--block btn--lg" data-link="line" href="#" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-line"/></svg>LINEで体験を予約する<span class="chip"><svg aria-hidden="true"><use href="#i-out"/></svg></span></a>
+      <a class="btn btn--ghost btn--block alt" data-link="instagram" href="https://www.instagram.com/arvo_2026/" target="_blank" rel="noopener">Instagramを見る<span class="chip"><svg aria-hidden="true"><use href="#i-ig"/></svg></span></a>
+      <p class="note">空き状況・予約確定はスタジオからの返信でご確認ください。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ACCESS ===== -->
+<section class="sec" id="access">
+  <div class="wrap access-grid">
+    <div class="access-img rv"><img src="assets/mat.webp" alt="スタジオのマットや運動用品" loading="lazy"></div>
+    <div class="rv">
+      <p class="eyebrow">ACCESS / WAKAYAMA</p>
+      <h2 class="h2">いつもの街に、<br>新しい楽しみを。</h2>
+      <p class="addr"><b>ARVO和歌山</b>〒641-0007<br>和歌山県和歌山市小雑賀805−1<br>オークワセントラルシティ内</p>
+      <div class="btn-row"><a class="btn btn--dark" href="https://www.google.com/maps/place/%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%E3%82%AA%E3%83%BC%E3%82%AF%E3%83%AF+%E3%82%BB%E3%83%B3%E3%83%88%E3%83%A9%E3%83%AB%E3%82%B7%E3%83%86%E3%82%A3%E5%92%8C%E6%AD%8C%E5%B1%B1%E5%BA%97/@34.195316,135.18336,16z" target="_blank" rel="noopener">Googleマップで見る<span class="chip"><svg aria-hidden="true"><use href="#i-out"/></svg></span></a></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft-in">
+      <a class="logo" href="#top"><b>ARVO</b><small>FITNESS / WAKAYAMA</small></a>
+      <nav class="ft-nav" aria-label="フッターメニュー">
+        <a href="#about">ARVOについて</a><a href="#lessons">レッスン</a><a href="#price">料金</a><a href="#faq">Q&amp;A</a>
+        <a href="https://arvo-4ef22.web.app/" target="_blank" rel="noopener">セルフホワイトニング ↗</a>
+        <a data-link="instagram" href="https://www.instagram.com/arvo_2026/" target="_blank" rel="noopener">Instagram ↗</a>
+        <a data-link="line" href="#" target="_blank" rel="noopener">LINE公式 ↗</a>
+      </nav>
+    </div>
+    <small>© ARVO WAKAYAMA</small>
+  </div>
+</footer>
+
+<div class="fix-cta" id="fixCta">
+  <a class="btn btn--line" data-link="line" href="#" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-line"/></svg>LINEで体験予約<span class="chip"><svg aria-hidden="true"><use href="#i-out"/></svg></span></a>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
