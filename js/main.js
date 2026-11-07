@@ -4,7 +4,7 @@
 var LINKS = {
   // ▼ LINE公式アカウント（体験予約・ご相談）
   line: 'https://lin.ee/SpYlcYa',
-  instagram: 'https://www.instagram.com/arvo_2026/',
+  instagram: 'https://www.instagram.com/arvo_wakayama/',
   whitening: 'https://arvo-4ef22.web.app/'
 };
 
