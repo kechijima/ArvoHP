@@ -6,24 +6,26 @@
    ・文字：最小14px / 本文17px（スマホ16px）/ 行間ゆったり
    ========================================================= */
 :root{
-  --ink:#3a2f2a;          /* 本文 */
-  --ink-soft:#6a5d55;     /* 補足文（クリーム地で4.5:1以上） */
-  --cream:#fbf6f0;        /* ベース背景 */
-  --cream-2:#f5ece2;
-  --sand:#ecdccb;
-  --line:#e6d7c7;
+  /* 配色は元サイト（arvo2026.com）を踏襲 */
+  --ink:#2c343b;          /* 本文 */
+  --ink-soft:#5a534d;     /* 補足文 */
+  --brown:#241d18;        /* 濃色面 */
+  --cream:#fffaf4;        /* ベース背景 */
+  --cream-2:#fff8ec;
+  --sand:#f3e2cd;
+  --line:#e9dccd;
   --white:#fff;
-  --accent:#d0682f;       /* テラコッタ（装飾・ボタン） */
-  --accent-dp:#a8501f;    /* 文字用（白地で4.5:1以上） */
-  --accent-lt:#f6d2b8;
-  --rose:#f3ddd3;
-  --night:#1f2440;        /* 夜セクション */
-  --night-2:#2c3358;
-  --gold:#e8c27a;
+  --accent:#ff8017;       /* メインアクセント（オレンジ） */
+  --accent-dp:#c65d09;    /* 文字用オレンジ（白地で4.5:1） */
+  --accent-lt:#ffc08c;    /* ピーチ */
+  --rose:#ffe1ba;
+  --night:#241d18;        /* 夜セクション（ブラウン） */
+  --night-2:#3d2a20;
+  --gold:#ffc08c;         /* 夜セクションのアクセント（ピーチ） */
   --line-green:#06c755;   /* LINE公式カラー */
-  --grad:linear-gradient(120deg,#e58a4e,#d0682f 60%,#c0582a);
+  --grad:linear-gradient(115deg,#ffbd59,#ff8017 70%,#f56d08);
   --radius:24px;
-  --shadow:0 20px 44px -22px rgba(96,58,32,.38);
+  --shadow:0 20px 44px -22px rgba(116,67,36,.35);
   --wrap:1160px;
   --font:"Noto Sans JP",system-ui,-apple-system,"Hiragino Sans",sans-serif;
   --serif:"Shippori Mincho","Noto Serif JP","Hiragino Mincho ProN",serif;
@@ -55,7 +57,7 @@ h1,h2,h3,p{margin:0}
   display:inline-flex;align-items:center;justify-content:space-between;gap:18px;
   min-height:62px;padding:8px 10px 8px 30px;border-radius:999px;
   background:var(--bg);color:var(--fg);text-decoration:none;font-weight:700;font-size:17px;letter-spacing:.06em;
-  border:0;cursor:pointer;box-shadow:0 12px 26px -14px rgba(192,88,42,.7);
+  border:0;cursor:pointer;box-shadow:0 12px 26px -14px rgba(245,109,8,.6);
   transition:transform .2s ease,box-shadow .2s ease}
 .btn .chip{flex:none;width:44px;height:44px;border-radius:50%;background:var(--chip);display:grid;place-items:center;transition:transform .25s ease}
 .btn .chip svg{width:18px;height:18px}
@@ -66,7 +68,7 @@ h1,h2,h3,p{margin:0}
 .btn--line .ico{width:28px;height:28px;flex:none}
 .btn--ghost{--bg:transparent;--fg:var(--ink);--chip:var(--cream-2);box-shadow:inset 0 0 0 1.5px var(--ink)}
 .btn--ghost-lt{--bg:rgba(255,255,255,.06);--fg:#fff;--chip:rgba(255,255,255,.16);box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.7)}
-.btn--dark{--bg:var(--ink);--chip:rgba(255,255,255,.14);box-shadow:none}
+.btn--dark{--bg:var(--brown);--chip:rgba(255,255,255,.14);box-shadow:none}
 .btn--lg{min-height:70px;font-size:18px;padding-left:34px}
 .btn--block{display:flex;width:100%}
 .btn-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
@@ -89,7 +91,7 @@ h1,h2,h3,p{margin:0}
 /* ---------- ファーストビュー ---------- */
 .hero{position:relative;padding:118px 0 72px;overflow:hidden;background:
   radial-gradient(70% 60% at 100% 0,var(--rose),transparent 70%),
-  radial-gradient(50% 50% at 0 100%,#f3e3cf,transparent 70%),var(--cream)}
+  radial-gradient(50% 50% at 0 100%,#f3e2cd,transparent 70%),var(--cream)}
 .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,5vw,64px);align-items:center}
 .hero-tag{display:inline-flex;align-items:center;gap:10px;font-size:15px;font-weight:700;color:var(--accent-dp);background:#fff;border-radius:999px;padding:8px 18px;box-shadow:0 1px 0 var(--line)}
 .hero h1 .nw{white-space:nowrap}
@@ -105,7 +107,7 @@ h1,h2,h3,p{margin:0}
 .hero-visual{position:relative}
 .hero-photo{border-radius:200px 200px 28px 28px;overflow:hidden;aspect-ratio:4/5;box-shadow:var(--shadow)}
 .hero-photo img{width:100%;height:100%;object-fit:cover;object-position:42% 50%}
-.hero-badge{position:absolute;left:-28px;bottom:36px;background:var(--night);color:#fff;border-radius:20px;padding:16px 22px 16px 18px;display:flex;gap:14px;align-items:center;box-shadow:0 18px 36px -16px rgba(31,36,64,.6)}
+.hero-badge{position:absolute;left:-28px;bottom:36px;background:var(--night);color:#fff;border-radius:20px;padding:16px 22px 16px 18px;display:flex;gap:14px;align-items:center;box-shadow:0 18px 36px -16px rgba(36,29,24,.6)}
 .hero-badge svg{width:34px;height:34px;color:var(--gold);flex:none}
 .hero-badge p{font-size:14px;line-height:1.5;color:rgba(255,255,255,.85)}
 .hero-badge b{display:block;font-size:19px;color:#fff;letter-spacing:.06em}
@@ -146,8 +148,8 @@ h1,h2,h3,p{margin:0}
 
 /* ---------- 夜のレッスン ---------- */
 .night{position:relative;overflow:hidden;color:#fff;background:
-  radial-gradient(40% 50% at 85% 10%,rgba(232,194,122,.22),transparent 70%),
-  linear-gradient(170deg,var(--night),#141830)}
+  radial-gradient(40% 50% at 85% 10%,rgba(247,191,142,.3),transparent 70%),
+  linear-gradient(170deg,var(--night),#1a1410)}
 .night .eyebrow{color:var(--gold)}
 .night .h2{color:#fff}.night .h2 em{color:var(--gold)}
 .night .lead{color:rgba(255,255,255,.85)}
@@ -206,7 +208,7 @@ h1,h2,h3,p{margin:0}
 .pcard{background:#fff;border-radius:28px;padding:clamp(28px,4vw,44px);box-shadow:var(--shadow)}
 .pcard .tag{font-family:var(--en);font-style:italic;font-weight:600;font-size:17px;letter-spacing:.1em;color:var(--accent-dp)}
 .pcard h3{font-family:var(--serif);font-size:clamp(24px,2.6vw,29px);margin-top:6px}
-.trial{margin-top:22px;border-radius:22px;padding:24px 28px;background:linear-gradient(110deg,#fff3e8,#fbe0cb);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 20px}
+.trial{margin-top:22px;border-radius:22px;padding:24px 28px;background:linear-gradient(110deg,#fff4de,#ffe1ba);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 20px}
 .trial .lbl{font-weight:700;font-size:17px;line-height:1.6}
 .trial .lbl small{display:block;font-weight:500;font-size:14px;color:var(--ink-soft)}
 .trial .val{font-family:var(--en);font-weight:700;font-size:54px;line-height:1;color:var(--accent-dp)}
@@ -224,12 +226,12 @@ h1,h2,h3,p{margin:0}
 .gplan span{display:block;font-size:15px;color:var(--ink-soft)}
 .gplan .v{font-family:var(--en);font-weight:700;font-size:32px;white-space:nowrap;line-height:1.2}
 .gplan .v small{font-family:var(--font);font-size:15px}
-.gplan.is-best{background:var(--ink);color:#fff}
-.gplan.is-best span{color:rgba(255,255,255,.8)}
-.gplan.is-best .v{color:var(--gold)}
+.gplan.is-best{background:var(--grad);color:#fff}
+.gplan.is-best span{color:rgba(255,255,255,.9)}
+.gplan.is-best .v{color:#fff}
 
 /* ---------- ホワイトニング ---------- */
-.smile{background:linear-gradient(120deg,#fdf3ee,var(--rose))}
+.smile{background:linear-gradient(110deg,#fff8ec,#f3e2cd)}
 .smile-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,64px);align-items:center}
 .wh-only{display:inline-flex;align-items:center;gap:8px;background:#fff;border-radius:999px;padding:6px 16px;font-size:15px;font-weight:700;color:var(--accent-dp);margin-top:18px}
 .synergy{display:grid;gap:12px;margin-top:28px;padding:0;list-style:none}
@@ -268,7 +270,7 @@ h1,h2,h3,p{margin:0}
 .faq .a{padding:0 24px 24px 60px;color:var(--ink-soft)}
 
 /* ---------- CTA ---------- */
-.cta{background:linear-gradient(160deg,var(--cream-2),var(--rose))}
+.cta{background:linear-gradient(130deg,#fffdf8,#f7e9d9)}
 .cta-box{display:grid;grid-template-columns:1.15fr 1fr;gap:clamp(28px,5vw,60px);align-items:center}
 .cta-card{background:#fff;border-radius:28px;padding:clamp(28px,4vw,40px);box-shadow:var(--shadow)}
 .cta-card .trial{margin-top:0}
@@ -288,7 +290,7 @@ h1,h2,h3,p{margin:0}
 .addr-hours{margin-top:18px;font-size:16px;color:var(--ink-soft);line-height:1.9}
 
 /* ---------- フッター ---------- */
-.ft{background:var(--ink);color:rgba(255,255,255,.85);padding:64px 0 120px}
+.ft{background:var(--brown);color:rgba(255,255,255,.85);padding:64px 0 120px}
 .ft-in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:30px;align-items:flex-start}
 .ft .logo{color:#fff}.ft .logo small{color:rgba(255,255,255,.7)}
 .ft-nav{display:flex;flex-wrap:wrap;gap:12px 26px}
@@ -313,7 +315,7 @@ h1,h2,h3,p{margin:0}
   .nav.is-open{display:flex}
   .nav a{padding:16px 4px;border-bottom:1px solid var(--line);font-size:17px}
   .nav .btn{margin-top:16px;border:0;justify-content:space-between}
-  .menu-btn{display:grid;place-items:center;width:52px;height:52px;border-radius:50%;border:0;background:var(--ink);color:#fff;cursor:pointer}
+  .menu-btn{display:grid;place-items:center;width:52px;height:52px;border-radius:50%;border:0;background:var(--brown);color:#fff;cursor:pointer}
   .menu-btn svg{width:24px;height:24px}
   .hero{padding-top:100px}
   .hero-grid,.about-grid,.check-grid,.night-grid,.lessons,.price-grid,.smile-grid,.cta-box,.access-grid{grid-template-columns:1fr}
