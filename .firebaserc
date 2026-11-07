@@ -1,0 +1,12 @@
+{
+  "projects": {
+    "default": "arvo-4ef22"
+  },
+  "targets": {
+    "arvo-4ef22": {
+      "hosting": {
+        "fitness": ["arvo-fitness"]
+      }
+    }
+  }
+}

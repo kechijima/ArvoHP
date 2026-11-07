@@ -1,0 +1,20 @@
+name: Deploy to Firebase Hosting (arvo-fitness)
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_ARVO_4EF22 }}
+          projectId: arvo-4ef22
+          target: fitness
+          channelId: live
