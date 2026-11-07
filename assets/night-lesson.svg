@@ -1,57 +1,93 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-label="夜のスタジオでピラティスをする女性のイメージ">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-label="夜のスタジオでマシンピラティスとトレーニングをする女性たちのイメージ">
   <defs>
-    <linearGradient id="room" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a2a22"/><stop offset="1" stop-color="#241d18"/></linearGradient>
-    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1c2035"/><stop offset=".7" stop-color="#3b3350"/><stop offset="1" stop-color="#6a4a48"/></linearGradient>
-    <radialGradient id="lamp" cx=".5" cy="0" r=".9"><stop offset="0" stop-color="#ffc08c" stop-opacity=".32"/><stop offset="1" stop-color="#ffc08c" stop-opacity="0"/></radialGradient>
-    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5a3e2e"/><stop offset="1" stop-color="#3a281e"/></linearGradient>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4a372c"/><stop offset="1" stop-color="#36281f"/></linearGradient>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1c2035"/><stop offset=".75" stop-color="#3b3350"/><stop offset="1" stop-color="#5e4446"/></linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7a5a43"/><stop offset="1" stop-color="#5a3f2f"/></linearGradient>
+    <radialGradient id="glow" cx=".35" cy="0" r=".9"><stop offset="0" stop-color="#ffd2a6" stop-opacity=".35"/><stop offset="1" stop-color="#ffd2a6" stop-opacity="0"/></radialGradient>
   </defs>
-  <rect width="800" height="560" fill="url(#room)"/>
-  <!-- 窓 -->
-  <rect x="90" y="60" width="620" height="340" rx="8" fill="url(#sky)"/>
-  <circle cx="610" cy="130" r="34" fill="#ffe3c4"/>
-  <circle cx="626" cy="120" r="30" fill="#2a2840" opacity=".9"/>
-  <g fill="#ffffff" opacity=".7"><circle cx="160" cy="100" r="1.6"/><circle cx="240" cy="140" r="1.2"/><circle cx="330" cy="90" r="1.6"/><circle cx="430" cy="120" r="1.2"/><circle cx="520" cy="85" r="1.4"/><circle cx="680" cy="200" r="1.2"/></g>
-  <!-- 街並み -->
-  <g fill="#1a1626">
-    <rect x="90" y="270" width="70" height="130"/><rect x="160" y="230" width="55" height="170"/><rect x="215" y="290" width="80" height="110"/>
-    <rect x="295" y="250" width="60" height="150"/><rect x="355" y="300" width="90" height="100"/><rect x="445" y="240" width="65" height="160"/>
-    <rect x="510" y="280" width="85" height="120"/><rect x="595" y="225" width="60" height="175"/><rect x="655" y="290" width="55" height="110"/>
+
+  <!-- 壁・床 -->
+  <rect width="800" height="560" fill="url(#wall)"/>
+  <rect y="430" width="800" height="130" fill="url(#floor)"/>
+  <g stroke="#000" stroke-opacity=".12"><path d="M0 470h800M0 515h800"/><path d="M120 430v40M330 470v45M560 430v40M690 515v45M260 515v45"/></g>
+
+  <!-- 窓（夜景） -->
+  <rect x="490" y="50" width="270" height="250" rx="6" fill="url(#sky)"/>
+  <path d="M703 92a22 22 0 1 0 18 34a18 18 0 1 1 -18 -34z" fill="#ffe3c4"/>
+  <g fill="#fff" opacity=".7"><circle cx="530" cy="80" r="1.5"/><circle cx="600" cy="110" r="1.2"/><circle cx="650" cy="70" r="1.5"/><circle cx="740" cy="160" r="1.2"/></g>
+  <g fill="#1a1626"><rect x="490" y="200" width="50" height="100"/><rect x="540" y="170" width="42" height="130"/><rect x="582" y="215" width="60" height="85"/><rect x="642" y="185" width="46" height="115"/><rect x="688" y="225" width="72" height="75"/></g>
+  <g fill="#ffbd59" opacity=".85"><rect x="502" y="215" width="7" height="7"/><rect x="520" y="240" width="7" height="7"/><rect x="552" y="185" width="7" height="7"/><rect x="566" y="215" width="7" height="7"/><rect x="552" y="250" width="7" height="7"/><rect x="598" y="232" width="7" height="7"/><rect x="620" y="255" width="7" height="7"/><rect x="655" y="200" width="7" height="7"/><rect x="670" y="235" width="7" height="7"/><rect x="705" y="240" width="7" height="7"/><rect x="735" y="262" width="7" height="7"/></g>
+  <g fill="none" stroke="#6b4f3c" stroke-width="9"><rect x="490" y="50" width="270" height="250" rx="6"/><path d="M625 50v250"/></g>
+
+  <!-- 壁掛け時計（20:00） -->
+  <circle cx="110" cy="110" r="38" fill="#fffaf4" stroke="#6b4f3c" stroke-width="6"/>
+  <g stroke="#3d2a20" stroke-linecap="round"><path d="M110 110v-26" stroke-width="3.5"/><path d="M110 110l-16 9" stroke-width="5"/></g>
+  <g fill="#3d2a20"><circle cx="110" cy="80" r="2.4"/><circle cx="140" cy="110" r="2.4"/><circle cx="110" cy="140" r="2.4"/><circle cx="80" cy="110" r="2.4"/></g>
+  <text x="110" y="178" text-anchor="middle" font-family="Montserrat,Arial,sans-serif" font-weight="800" font-size="20" fill="#ffc08c">20:00</text>
+
+  <!-- 棚（ボール・丸めたマット） -->
+  <rect x="200" y="200" width="200" height="10" rx="3" fill="#6b4f3c"/>
+  <circle cx="232" cy="178" r="22" fill="#ff8017"/>
+  <circle cx="280" cy="184" r="16" fill="#ffc08c"/>
+  <rect x="310" y="170" width="74" height="30" rx="15" fill="#c9b8a6"/><circle cx="384" cy="185" r="15" fill="#b3a08c"/><circle cx="384" cy="185" r="5" fill="#8d7966"/>
+
+  <!-- 照明の光 -->
+  <rect width="800" height="560" fill="url(#glow)"/>
+
+  <!-- ===== マシンピラティス（リフォーマー） ===== -->
+  <g>
+    <!-- フレーム -->
+    <rect x="60" y="398" width="380" height="26" rx="8" fill="#e9dccd"/>
+    <rect x="70" y="424" width="16" height="30" rx="4" fill="#bfae9b"/>
+    <rect x="414" y="424" width="16" height="30" rx="4" fill="#bfae9b"/>
+    <!-- スプリング -->
+    <path d="M250 412 l8 -6 8 12 8 -12 8 12 8 -12 8 12 8 -12 8 12 8 -12 8 12 8 -6" fill="none" stroke="#8d7966" stroke-width="3" stroke-linejoin="round"/>
+    <!-- ストラップ用ポスト -->
+    <rect x="62" y="300" width="12" height="100" rx="4" fill="#bfae9b"/>
+    <circle cx="68" cy="304" r="9" fill="#8d7966"/>
+    <!-- フットバー -->
+    <rect x="416" y="338" width="10" height="62" rx="4" fill="#bfae9b"/>
+    <rect x="404" y="330" width="34" height="14" rx="7" fill="#3d2a20"/>
+    <!-- キャリッジ・ヘッドレスト・ショルダーブロック -->
+    <rect x="128" y="384" width="120" height="18" rx="6" fill="#ff8017"/>
+    <rect x="112" y="378" width="30" height="12" rx="5" fill="#ff8017"/>
+    <rect x="160" y="362" width="12" height="24" rx="4" fill="#3d2a20"/>
   </g>
-  <g fill="#ffbd59" opacity=".85">
-    <rect x="105" y="290" width="8" height="8"/><rect x="125" y="310" width="8" height="8"/><rect x="175" y="250" width="8" height="8"/><rect x="195" y="280" width="8" height="8"/>
-    <rect x="175" y="320" width="8" height="8"/><rect x="235" y="310" width="8" height="8"/><rect x="265" y="330" width="8" height="8"/><rect x="310" y="270" width="8" height="8"/>
-    <rect x="330" y="300" width="8" height="8"/><rect x="380" y="320" width="8" height="8"/><rect x="410" y="340" width="8" height="8"/><rect x="460" y="260" width="8" height="8"/>
-    <rect x="485" y="300" width="8" height="8"/><rect x="530" y="300" width="8" height="8"/><rect x="560" y="330" width="8" height="8"/><rect x="610" y="245" width="8" height="8"/>
-    <rect x="630" y="285" width="8" height="8"/><rect x="670" y="310" width="8" height="8"/><rect x="610" y="330" width="8" height="8"/>
+  <!-- 寝ている女性（フットワーク） -->
+  <g stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- 脚（レギンス） -->
+    <path d="M236 378 L318 334" stroke="#3d2a20" stroke-width="24"/>
+    <path d="M318 334 L404 334" stroke="#3d2a20" stroke-width="18"/>
+    <!-- 胴体（トップス） -->
+    <path d="M172 376 L238 378" stroke="#ffc08c" stroke-width="28"/>
+    <!-- 腕 -->
+    <path d="M182 390 L230 394" stroke="#f1c7a5" stroke-width="9"/>
   </g>
-  <!-- 窓枠 -->
-  <g fill="none" stroke="#5a4334" stroke-width="10"><rect x="90" y="60" width="620" height="340" rx="8"/><path d="M297 60v340M503 60v340"/></g>
-  <!-- ランプの光 -->
-  <rect width="800" height="560" fill="url(#lamp)"/>
-  <path d="M400 0v40" stroke="#5a4334" stroke-width="3"/>
-  <path d="M376 40h48l-10 22h-28z" fill="#ffc08c"/>
-  <!-- 床・マット -->
-  <rect y="400" width="800" height="160" fill="url(#floor)"/>
-  <path d="M0 440h800M0 490h800" stroke="#000" stroke-opacity=".12"/>
-  <path d="M250 488 L560 488 L600 520 L210 520 Z" fill="#ff8017" opacity=".9"/>
-  <!-- 女性（マーメイドストレッチ：左へ体側を伸ばす） -->
-  <g fill="#1d1612" stroke="#1d1612" stroke-linecap="round" stroke-linejoin="round">
-    <!-- 脚（右側に横座り） -->
-    <path d="M412 478 Q462 466 506 484" fill="none" stroke-width="28"/>
-    <path d="M504 490 Q474 504 438 506" fill="none" stroke-width="18"/>
-    <path d="M436 506 l-14 2" fill="none" stroke-width="10"/>
+  <rect x="398" y="324" width="10" height="20" rx="4" fill="#f1c7a5"/>
+  <circle cx="142" cy="368" r="15" fill="#f1c7a5"/>
+  <path d="M128 362a15 15 0 0 1 28 -6c-6 6-16 8-28 6z" fill="#2b211c"/>
+  <circle cx="122" cy="372" r="8" fill="#2b211c"/>
+
+  <!-- ===== ダンベルトレーニング ===== -->
+  <path d="M540 478 L760 478 L776 500 L524 500 Z" fill="#ff8017" opacity=".95"/>
+  <g stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- 脚 -->
+    <path d="M640 398 L616 482" stroke="#3d2a20" stroke-width="20"/>
+    <path d="M660 398 L686 482" stroke="#3d2a20" stroke-width="20"/>
     <!-- 胴体 -->
-    <path d="M388 492 C384 452 364 424 356 390 L394 372 C402 408 424 448 446 488 Z" stroke-width="4"/>
-    <!-- 頭・首 -->
-    <path d="M372 378 L366 360" fill="none" stroke-width="12"/>
-    <circle cx="362" cy="344" r="19" stroke="none"/>
-    <path d="M374 332 q14 -6 20 6" fill="none" stroke-width="9"/>
-    <!-- 上の腕：頭上を越えて左へ -->
-    <path d="M392 378 Q392 318 360 296 Q330 280 300 300" fill="none" stroke-width="12"/>
-    <!-- 床についた腕 -->
-    <path d="M362 392 Q336 440 322 488" fill="none" stroke-width="11"/>
-    <path d="M322 488 l-12 2" fill="none" stroke-width="8"/>
+    <path d="M650 336 L650 400" stroke="#f4a99b" stroke-width="40"/>
+    <!-- 腕（ショルダープレス） -->
+    <path d="M632 340 L600 336 L596 290" stroke="#f1c7a5" stroke-width="11"/>
+    <path d="M668 340 L700 336 L704 290" stroke="#f1c7a5" stroke-width="11"/>
   </g>
-  <!-- 床への映り込み -->
-  <ellipse cx="420" cy="522" rx="190" ry="8" fill="#000" opacity=".25"/>
+  <!-- ダンベル -->
+  <g fill="#e9dccd"><rect x="578" y="282" width="38" height="7" rx="3"/><rect x="574" y="274" width="10" height="22" rx="3"/><rect x="610" y="274" width="10" height="22" rx="3"/></g>
+  <g fill="#e9dccd"><rect x="685" y="282" width="38" height="7" rx="3"/><rect x="681" y="274" width="10" height="22" rx="3"/><rect x="717" y="274" width="10" height="22" rx="3"/></g>
+  <!-- 頭 -->
+  <rect x="644" y="318" width="12" height="14" fill="#f1c7a5"/>
+  <circle cx="650" cy="304" r="17" fill="#f1c7a5"/>
+  <path d="M633 302a17 17 0 0 1 34 0c-8-8-26-8-34 0z" fill="#2b211c"/>
+  <path d="M664 296q18 4 14 26" stroke="#2b211c" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <!-- シューズ -->
+  <g fill="#fffaf4"><rect x="602" y="476" width="24" height="10" rx="5"/><rect x="678" y="476" width="24" height="10" rx="5"/></g>
 </svg>
