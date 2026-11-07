@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-label="夜のスタジオでピラティスをする女性のイメージ">
+  <defs>
+    <linearGradient id="room" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a2a22"/><stop offset="1" stop-color="#241d18"/></linearGradient>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1c2035"/><stop offset=".7" stop-color="#3b3350"/><stop offset="1" stop-color="#6a4a48"/></linearGradient>
+    <radialGradient id="lamp" cx=".5" cy="0" r=".9"><stop offset="0" stop-color="#ffc08c" stop-opacity=".32"/><stop offset="1" stop-color="#ffc08c" stop-opacity="0"/></radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5a3e2e"/><stop offset="1" stop-color="#3a281e"/></linearGradient>
+  </defs>
+  <rect width="800" height="560" fill="url(#room)"/>
+  <!-- 窓 -->
+  <rect x="90" y="60" width="620" height="340" rx="8" fill="url(#sky)"/>
+  <circle cx="610" cy="130" r="34" fill="#ffe3c4"/>
+  <circle cx="626" cy="120" r="30" fill="#2a2840" opacity=".9"/>
+  <g fill="#ffffff" opacity=".7"><circle cx="160" cy="100" r="1.6"/><circle cx="240" cy="140" r="1.2"/><circle cx="330" cy="90" r="1.6"/><circle cx="430" cy="120" r="1.2"/><circle cx="520" cy="85" r="1.4"/><circle cx="680" cy="200" r="1.2"/></g>
+  <!-- 街並み -->
+  <g fill="#1a1626">
+    <rect x="90" y="270" width="70" height="130"/><rect x="160" y="230" width="55" height="170"/><rect x="215" y="290" width="80" height="110"/>
+    <rect x="295" y="250" width="60" height="150"/><rect x="355" y="300" width="90" height="100"/><rect x="445" y="240" width="65" height="160"/>
+    <rect x="510" y="280" width="85" height="120"/><rect x="595" y="225" width="60" height="175"/><rect x="655" y="290" width="55" height="110"/>
+  </g>
+  <g fill="#ffbd59" opacity=".85">
+    <rect x="105" y="290" width="8" height="8"/><rect x="125" y="310" width="8" height="8"/><rect x="175" y="250" width="8" height="8"/><rect x="195" y="280" width="8" height="8"/>
+    <rect x="175" y="320" width="8" height="8"/><rect x="235" y="310" width="8" height="8"/><rect x="265" y="330" width="8" height="8"/><rect x="310" y="270" width="8" height="8"/>
+    <rect x="330" y="300" width="8" height="8"/><rect x="380" y="320" width="8" height="8"/><rect x="410" y="340" width="8" height="8"/><rect x="460" y="260" width="8" height="8"/>
+    <rect x="485" y="300" width="8" height="8"/><rect x="530" y="300" width="8" height="8"/><rect x="560" y="330" width="8" height="8"/><rect x="610" y="245" width="8" height="8"/>
+    <rect x="630" y="285" width="8" height="8"/><rect x="670" y="310" width="8" height="8"/><rect x="610" y="330" width="8" height="8"/>
+  </g>
+  <!-- 窓枠 -->
+  <g fill="none" stroke="#5a4334" stroke-width="10"><rect x="90" y="60" width="620" height="340" rx="8"/><path d="M297 60v340M503 60v340"/></g>
+  <!-- ランプの光 -->
+  <rect width="800" height="560" fill="url(#lamp)"/>
+  <path d="M400 0v40" stroke="#5a4334" stroke-width="3"/>
+  <path d="M376 40h48l-10 22h-28z" fill="#ffc08c"/>
+  <!-- 床・マット -->
+  <rect y="400" width="800" height="160" fill="url(#floor)"/>
+  <path d="M0 440h800M0 490h800" stroke="#000" stroke-opacity=".12"/>
+  <path d="M250 488 L560 488 L600 520 L210 520 Z" fill="#ff8017" opacity=".9"/>
+  <!-- 女性（マーメイドストレッチ：左へ体側を伸ばす） -->
+  <g fill="#1d1612" stroke="#1d1612" stroke-linecap="round" stroke-linejoin="round">
+    <!-- 脚（右側に横座り） -->
+    <path d="M412 478 Q462 466 506 484" fill="none" stroke-width="28"/>
+    <path d="M504 490 Q474 504 438 506" fill="none" stroke-width="18"/>
+    <path d="M436 506 l-14 2" fill="none" stroke-width="10"/>
+    <!-- 胴体 -->
+    <path d="M388 492 C384 452 364 424 356 390 L394 372 C402 408 424 448 446 488 Z" stroke-width="4"/>
+    <!-- 頭・首 -->
+    <path d="M372 378 L366 360" fill="none" stroke-width="12"/>
+    <circle cx="362" cy="344" r="19" stroke="none"/>
+    <path d="M374 332 q14 -6 20 6" fill="none" stroke-width="9"/>
+    <!-- 上の腕：頭上を越えて左へ -->
+    <path d="M392 378 Q392 318 360 296 Q330 280 300 300" fill="none" stroke-width="12"/>
+    <!-- 床についた腕 -->
+    <path d="M362 392 Q336 440 322 488" fill="none" stroke-width="11"/>
+    <path d="M322 488 l-12 2" fill="none" stroke-width="8"/>
+  </g>
+  <!-- 床への映り込み -->
+  <ellipse cx="420" cy="522" rx="190" ry="8" fill="#000" opacity=".25"/>
+</svg>
