@@ -25,7 +25,7 @@ PAGES = {
         HERO_TAG="和歌山市の女性専用フィットネス",
         H1='女性だけの空間で、<br><span class="nw"><em>自分のペース</em>で。</span>',
         LEAD="ピラティス・ヨガ・ダンス。<br>はじめての方も、久しぶりの方も。",
-        HERO_IMG="hero-studio.webp", HERO_ALT="鏡張りのARVOのスタジオ", HERO_W=1125, HERO_H=2000, HERO_POS="50% 35%",
+        HERO_IMG="hero-pilates.webp", HERO_ALT="マシンピラティスで身体を伸ばす女性", HERO_W=1333, HERO_H=2000, HERO_POS="45% 45%",
         CHIPS=["女性だけのスタジオ", "はじめてでも大丈夫", "平日は夜21:15まで", "オークワセントラルシティ内"],
     ),
     # ② 30〜40代
