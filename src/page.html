@@ -1,0 +1,462 @@
+<!doctype html>
+<!-- このファイルは tools/build.py で自動生成されます。編集は src/page.html で行ってください。 -->
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{TITLE}}</title>
+<meta name="description" content="{{DESC}}">
+<meta property="og:title" content="{{TITLE}}">
+<meta property="og:description" content="{{OG_DESC}}">
+<meta property="og:image" content="https://arvo-fitness.web.app/assets/{{HERO_IMG}}">
+<meta property="og:url" content="https://arvo-fitness.web.app/{{PATH}}">
+<link rel="canonical" href="https://arvo-fitness.web.app/{{PATH}}">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#241d18">
+<link rel="icon" href="assets/favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" href="assets/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--
+  ▼ リンク設定
+  LINE公式アカウント: https://lin.ee/SpYlcYa（js/main.js の LINKS.line でも一括管理）
+-->
+<a class="skip" href="#main">本文へ移動</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-out" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-line" viewBox="0 0 24 24"><path d="M12 3.5C6.5 3.5 2 7.1 2 11.6c0 4 3.6 7.4 8.4 8 .3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5 1.1-.5 5.9-3.5 8-6 1.5-1.6 2-3.2 2-4.9 0-4.5-4.5-8.1-10.1-8.1Z" fill="#fff"/><path d="M6.6 9.6v4.2h2.6M10.6 9.6v4.2M12.6 13.8V9.6l2.8 4.2V9.6M19 9.6h-2.4v4.2H19M16.6 11.7H19" fill="none" stroke="#06c755" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z" fill="currentColor"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.3a4.3 4.3 0 0 1 7.5 2.5C19.5 15.4 12 20 12 20Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19c0-8 5-13 14-14-1 9-6 14-14 14Zm0 0 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-smile" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 14.5c1 1.4 2.4 2.1 4 2.1s3-.7 4-2.1M9 9.5h.01M15 9.5h.01" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+  <symbol id="i-body" viewBox="0 0 24 24"><circle cx="12" cy="4.8" r="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 9.5h14M12 9.5v5M12 14.5l-3.5 6M12 14.5l3.5 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3.5 10h17M8 3v4M16 3v4M9 14.5l2 2 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+</svg>
+
+<!-- ===== HEADER ===== -->
+<header class="hd" id="hd">
+  <div class="wrap hd-in">
+    <a class="logo" href="#top" aria-label="ARVO 和歌山 トップへ"><b>ARVO</b><small>女性専用フィットネス｜和歌山</small></a>
+    <button class="menu-btn" id="menuBtn" aria-label="メニューを開く" aria-expanded="false" aria-controls="nav"><svg><use href="#i-menu"/></svg></button>
+    <nav class="nav" id="nav" aria-label="メインメニュー">
+      <a href="#reasons">ARVOの特長</a>
+      <a href="#studio">スタジオ</a>
+      <a href="#lessons">レッスン</a>
+      <a href="#price">料金</a>
+      <a href="#fasting">ファスティング</a>
+      <a href="#smile">ホワイトニング</a>
+      <a href="#faq">よくある質問</a>
+      <a class="btn btn--line" data-link="line" href="https://lin.ee/SpYlcYa" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-line"/></svg>LINEで体験予約<span class="chip"><svg aria-hidden="true"><use href="#i-out"/></svg></span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<!-- ===== FIRST VIEW ===== -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div class="hero-main">
+      <p class="hero-tag"><svg width="18" height="18" aria-hidden="true"><use href="#i-heart"/></svg>{{HERO_TAG}}</p>
+      <h1>{{H1}}</h1>
+      <p class="hero-lead">{{LEAD}}</p>
+      </div>
+      <div class="hero-cta">
+      <p class="hero-offer"><span class="lbl">ピラティスパーソナル体験<small>お一人様1回まで（通常8,800円）</small></span><span class="price">4,400<small>円</small></span></p>
+      <div class="btn-row">
+        <a class="btn btn--line btn--lg" data-link="line" href="https://lin.ee/SpYlcYa" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-line"/></svg>LINEで体験を予約する<span class="chip"><svg aria-hidden="true"><use href="#i-out"/></svg></span></a>
+        <a class="btn btn--ghost btn--lg" href="#check">まずはお悩みチェック<span class="chip"><svg aria-hidden="true"><use href="#i-down"/></svg></span></a>
+      </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-photo"><img src="assets/{{HERO_IMG}}" alt="{{HERO_ALT}}" fetchpriority="high" width="{{HERO_W}}" height="{{HERO_H}}" style="object-position:{{HERO_POS}}"></div>
+    </div>
+  </div>
+  <div class="wrap">
+    <ul class="hero-chips">
+{{CHIPS}}
+    </ul>
+  </div>
+</section>
+
+<!-- ===== お悩みチェック ===== -->
+<section class="sec check" id="check">
+  <div class="wrap check-grid">
+    <div class="rv">
+      <p class="eyebrow">お悩みチェック</p>
+      <h2 class="h2">こんなこと、<br>感じていませんか？</h2>
+      <p class="lead">当てはまるものをタップしてください。</p>
+      <ul class="check-list" style="margin-top:30px">
+        <li class="check-item"><input type="checkbox" id="c1" data-hint="personal"><label for="c1"><span class="box"><svg><use href="#i-check"/></svg></span>肩こり・姿勢が気になる</label></li>
+        <li class="check-item"><input type="checkbox" id="c2" data-hint="personal"><label for="c2"><span class="box"><svg><use href="#i-check"/></svg></span>体型の変化が気になる</label></li>
+        <li class="check-item"><input type="checkbox" id="c3" data-hint="both"><label for="c3"><span class="box"><svg><use href="#i-check"/></svg></span>運動は久しぶりで不安</label></li>
+        <li class="check-item"><input type="checkbox" id="c4" data-hint="group"><label for="c4"><span class="box"><svg><use href="#i-check"/></svg></span>ひとりだと続かない</label></li>
+        <li class="check-item"><input type="checkbox" id="c5" data-hint="group"><label for="c5"><span class="box"><svg><use href="#i-check"/></svg></span>いつまでも元気でいたい</label></li>
+        <li class="check-item"><input type="checkbox" id="c6" data-hint="night"><label for="c6"><span class="box"><svg><use href="#i-check"/></svg></span>夜に自分の時間がほしい</label></li>
+      </ul>
+      <p class="note">医学的な診断ではありません。</p>
+    </div>
+    <aside class="result rv" aria-live="polite">
+      <p class="count"><span id="cnt">0</span><small>/ 6 項目</small></p>
+      <h3 id="resTitle">あなたに合う通い方を探しましょう。</h3>
+      <p id="resText">項目を選ぶと、おすすめが表示されます。</p>
+      <div class="btn-row">
+        <a class="btn btn--line btn--block" data-link="line" href="https://lin.ee/SpYlcYa" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-line"/></svg>LINEで相談・体験予約<span class="chip"><svg aria-hidden="true"><use href="#i-out"/></svg></span></a>
+        <a class="btn btn--ghost btn--block" href="#lessons">レッスンを見てみる<span class="chip"><svg aria-hidden="true"><use href="#i-down"/></svg></span></a>
+      </div>
+      <button class="reset" id="reset" type="button">選択をリセット</button>
+    </aside>
+  </div>
+</section>
+
+<!-- ===== 特長 ===== -->
+<section class="sec" id="reasons">
+  <div class="wrap reasons-wrap">
+    <div class="rv">
+      <p class="eyebrow">ARVOの特長</p>
+      <h2 class="h2">はじめての方が、<br><em>安心して通える</em>理由。</h2>
+            <div class="reasons">
+        <div class="reason"><span class="n">01</span><h3>女性だけの空間</h3><p>体調のことも気軽に話せます。</p></div>
+        <div class="reason"><span class="n">02</span><h3>マシンで無理なく</h3><p>補助があるので、久しぶりでも安心。</p></div>
+        <div class="reason"><span class="n">03</span><h3>体調に合わせて調整</h3><p>その日の身体に合わせて進めます。</p></div>
+        <div class="reason"><span class="n">04</span><h3>お買い物ついでに</h3><p>オークワセントラルシティ内です。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== スタジオ紹介 ===== -->
+<section class="sec gallery-sec" id="studio">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <p class="eyebrow">スタジオ紹介</p>
+      <h2 class="h2">通いやすい、<br>女性専用スタジオ</h2>
+      <p class="lead">オークワセントラルシティ内にあります。</p>
+    </div>
+    <div class="gallery">
+      <figure class="rv"><img src="assets/studio-exterior.webp" alt="ARVOの外観" loading="lazy" width="900" height="1200"><figcaption>外観</figcaption></figure>
+      <figure class="rv"><img src="assets/studio-entrance.webp" alt="ARVOのエントランス" loading="lazy" width="840" height="1120"><figcaption>エントランス</figcaption></figure>
+      <figure class="rv"><img src="assets/studio-room.webp" alt="鏡張りのスタジオ" loading="lazy" width="900" height="1200"><figcaption>鏡張りのスタジオ</figcaption></figure>
+      <figure class="rv"><img src="assets/studio-locker.webp" alt="鍵付きロッカー" loading="lazy" width="900" height="1200"><figcaption>鍵付きロッカー</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 夜のレッスン（30代向け） ===== -->
+<section class="sec night" id="night">
+  <div class="night-stars" aria-hidden="true"></div>
+  <div class="wrap night-grid">
+    <div class="rv">
+      <svg class="night-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+      <p class="eyebrow" style="margin-top:18px">夜のレッスン</p>
+      <h2 class="h2">お仕事帰りに。<br><em>夜の時間を、自分のために。</em></h2>
+      <p class="lead">平日は21:15まで。</p>
+      <ul class="night-points">
+        <li><svg aria-hidden="true"><use href="#i-moon"/></svg><span><b>仕事帰りにそのまま</b></span></li>
+        <li><svg aria-hidden="true"><use href="#i-moon"/></svg><span><b>女性だけで気をつかわない</b></span></li>
+        <li><svg aria-hidden="true"><use href="#i-moon"/></svg><span><b>一日の疲れをゆったりリセット</b></span></li>
+      </ul>
+    </div>
+    <div class="rv">
+    <figure class="night-img"><img src="assets/night-lesson.svg" alt="夜のスタジオでピラティスをする女性のイメージ" loading="lazy" width="800" height="560"></figure>
+    <div class="hours">
+      <h3>レッスン時間</h3>
+      <table>
+        <tr class="is-night"><th>月〜金</th><td>10:00<small> 〜 </small>21:15</td></tr>
+        <tr><th>土</th><td>10:00<small> 〜 </small>14:40</td></tr>
+        <tr><th>日</th><td><small>特別クラス</small></td></tr>
+      </table>
+      <p class="note">空き状況はLINEでお問い合わせください。</p>
+      <a class="btn btn--line btn--block" data-link="line" href="https://lin.ee/SpYlcYa" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-line"/></svg>夜の空き状況をLINEで聞く<span class="chip"><svg aria-hidden="true"><use href="#i-out"/></svg></span></a>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== レッスン ===== -->
+<section class="sec" id="lessons">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <p class="eyebrow">レッスン</p>
+      <h2 class="h2">選べる2つのレッスン</h2>
+          </div>
+    <div class="lessons">
+      <article class="lesson rv">
+        <div class="lesson-img"><img src="assets/welcome.webp" alt="カウンセリングを担当するインストラクター" loading="lazy" width="800" height="534" style="object-position:70% 30%"></div>
+        <div class="lesson-body">
+          <p class="tag">マンツーマン</p>
+          <h3>ピラティスパーソナル</h3>
+          <p class="catch">姿勢をじっくり整える。</p>
+          <ul>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg>マシンピラティス対応</li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg>自分のペースで進めたい方に</li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg>体験 1回4,400円</li>
+          </ul>
+          <a class="btn" href="#price-personal">パーソナルの料金を見る<span class="chip"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+        </div>
+      </article>
+      <article class="lesson rv">
+        <div class="lesson-img"><img src="assets/group-lesson.webp" alt="グループでマシンピラティスをする女性たち" loading="lazy" width="1120" height="700"></div>
+        <div class="lesson-body">
+          <p class="tag">みんなで</p>
+          <h3>グループレッスン</h3>
+          <p class="catch">仲間と楽しく続ける。</p>
+          <ul>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg>ピラティス・ヨガ・ダンス系</li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg>ひとりだと続かない方に</li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg>受け放題 12,800円</li>
+          </ul>
+          <a class="btn btn--dark" href="#price-group">グループの料金を見る<span class="chip"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 体験の流れ ===== -->
+<section class="sec flow-sec" id="flow">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <p class="eyebrow">はじめての方へ</p>
+      <h2 class="h2">体験当日の流れ</h2>
+          </div>
+    <ol class="steps">
+      <li class="step rv"><span class="n">STEP 01</span><h3>LINEでご予約</h3><p>希望日時を送るだけ。</p></li>
+      <li class="step rv"><span class="n">STEP 02</span><h3>カウンセリング</h3><p>体調や気になることをお聞きします。</p></li>
+      <li class="step rv"><span class="n">STEP 03</span><h3>体験レッスン</h3><p>無理のない内容で動いてみましょう。</p></li>
+      <li class="step rv"><span class="n">STEP 04</span><h3>通い方のご相談</h3><p>ご入会はゆっくりご検討ください。</p></li>
+    </ol>
+    <div class="bring rv"><b>持ち物</b><span>動きやすい服装</span><span>タオル</span><span>お飲み物</span></div>
+  </div>
+</section>
+
+<!-- ===== 料金 ===== -->
+<section class="sec" id="price">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <p class="eyebrow">料金</p>
+      <h2 class="h2">料金プラン</h2>
+          </div>
+    <div class="price-grid">
+      <div class="pcard rv" id="price-personal">
+        <p class="tag">マンツーマン</p>
+        <h3>ピラティスパーソナル</h3>
+        <div class="trial">
+          <p class="lbl">体験価格 / 1回<small>お一人様1回まで</small></p>
+          <p class="val">4,400<small>円</small></p>
+        </div>
+        <table class="ptable">
+          <tr><th>通常 / 1回</th><td>8,800<small>円</small></td></tr>
+          <tr><th>4回券<small>2ヶ月有効 / 1回あたり8,360円</small></th><td>33,440<small>円</small></td></tr>
+          <tr><th>8回券<small>3ヶ月有効 / 1回あたり7,480円</small></th><td>59,840<small>円</small></td></tr>
+          <tr><th>12回券<small>5ヶ月有効 / 1回あたり7,040円</small></th><td>84,480<small>円</small></td></tr>
+        </table>
+        <a class="btn btn--line btn--block btn--lg" data-link="line" href="https://lin.ee/SpYlcYa" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-line"/></svg>LINEで体験を予約する<span class="chip"><svg aria-hidden="true"><use href="#i-out"/></svg></span></a>
+      </div>
+      <div class="pcard rv" id="price-group">
+        <p class="tag">みんなで</p>
+        <h3>グループレッスン</h3>
+                <div class="group-plans">
+          <div class="gplan"><div><b>ライトプラン</b><span>6回チケット</span></div><p class="v">5,960<small>円</small></p></div>
+          <div class="gplan"><div><b>ベーシックプラン</b><span>15回チケット</span></div><p class="v">9,570<small>円</small></p></div>
+          <div class="gplan is-best"><div><b>マスタープラン</b><span>受け放題</span></div><p class="v">12,800<small>円</small></p></div>
+        </div>
+        <a class="btn btn--ghost btn--block" data-link="line" href="https://lin.ee/SpYlcYa" target="_blank" rel="noopener">自分に合うプランをLINEで相談<span class="chip"><svg aria-hidden="true"><use href="#i-out"/></svg></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ファスティング ===== -->
+<section class="sec fasting" id="fasting">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <p class="eyebrow">ファスティング</p>
+      <p class="fs-badge">0期生募集</p>
+      <h2 class="h2">パルスファスティング<br><span class="nw"><em>「何を食べてもいい」</em></span><span class="nw">から始める。</span></h2>
+      <p class="lead">3ヶ月間の食習慣改善プログラムです。</p>
+    </div>
+    <ul class="fs-worries rv">
+      <li><svg aria-hidden="true"><use href="#i-check"/></svg>リバウンドしてしまう</li>
+      <li><svg aria-hidden="true"><use href="#i-check"/></svg>食事制限が続かない</li>
+      <li><svg aria-hidden="true"><use href="#i-check"/></svg>何を食べればいいか分からない</li>
+      <li><svg aria-hidden="true"><use href="#i-check"/></svg>外食や飲み会で崩れてしまう</li>
+    </ul>
+    <h3 class="fs-sub rv">3つの柱</h3>
+    <div class="fs-pillars">
+      <div class="fs-card rv"><span class="n">01</span><h4>ケト習慣</h4><p>糖質を全部抜かず、少しずつコントロール。</p></div>
+      <div class="fs-card rv"><span class="n">02</span><h4>ファスティング</h4><p>空腹感や生活リズムに合わせて、食事回数を見直す。</p></div>
+      <div class="fs-card rv"><span class="n">03</span><h4>チャットサポート</h4><p>毎日の食事をアプリで共有。「これ食べて大丈夫？」にその都度回答。</p></div>
+    </div>
+    <h3 class="fs-sub rv">3ヶ月の流れ</h3>
+    <ol class="fs-steps">
+      <li class="rv"><span class="m">1ヶ月目</span><b>知る・整える</b><p>今の食生活を知り、無理なく変えられるポイントを探す。</p></li>
+      <li class="rv"><span class="m">2ヶ月目</span><b>コントロールする</b><p>糖質量と食べる時間を、少しずつ調整。</p></li>
+      <li class="rv"><span class="m">3ヶ月目</span><b>自分で整える</b><p>外食や飲み会の日も、自分で判断できる状態へ。</p></li>
+    </ol>
+    <div class="fs-support rv">
+      <div class="fs-phones">
+        <img src="assets/fasting-app-graph.webp" alt="アプリの体重推移グラフ画面" loading="lazy" width="600" height="720">
+        <img src="assets/fasting-app-chat.webp" alt="アプリのコーチとのチャット画面" loading="lazy" width="600" height="920">
+      </div>
+      <ul class="fs-support-list">
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><b>専用アプリで毎日サポート</b>食事を記録すると、コーチがフィードバック。</span></li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><b>月2回のZoomカウンセリング</b>30分・任意。食事や身体の変化、今後の目標を確認。</span></li>
+      </ul>
+    </div>
+    <div class="fs-price rv">
+      <div class="fs-price-main">
+        <p class="tag">サポート期間 3ヶ月</p>
+        <p class="fs-normal">通常価格 <s>¥99,000</s></p>
+        <p class="fs-sale"><span class="lbl">0期生限定価格</span><b>¥49,500</b><span class="off">50%OFF</span></p>
+      </div>
+      <div class="fs-option">
+        <p class="tag">オプション</p>
+        <h4>トレーニングメニュー作成</h4>
+        <p>Zoom 60分でヒアリングし、専用メニューを作成します。</p>
+        <table class="ptable"><tr><th>新規</th><td>8,800<small>円</small></td></tr><tr><th>アップデート<small>2回目以降</small></th><td>4,400<small>円</small></td></tr></table>
+      </div>
+      <a class="btn btn--line btn--block btn--lg" data-link="line" href="https://lin.ee/SpYlcYa" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-line"/></svg>ファスティングをLINEで相談<span class="chip"><svg aria-hidden="true"><use href="#i-out"/></svg></span></a>
+    </div>
+    <p class="note center">※効果には個人差があります。持病のある方・妊娠中の方は、事前に医師へご相談ください。</p>
+  </div>
+</section>
+
+<!-- ===== ホワイトニング（女性専用） ===== -->
+<section class="sec smile" id="smile">
+  <div class="wrap smile-grid">
+    <div class="rv">
+      <p class="eyebrow">セルフホワイトニング</p>
+      <h2 class="h2">姿勢を整えたら、<br><em>口元</em>も明るく。</h2>
+      <p class="wh-only"><svg width="18" height="18" aria-hidden="true"><use href="#i-heart"/></svg>ホワイトニングも女性専用です</p>
+      <p class="lead">レッスンのついでに、口元のケアも。</p>
+      <ul class="synergy">
+        <li><span class="ic"><svg aria-hidden="true"><use href="#i-body"/></svg></span><div><h3>姿勢と口元で、印象を明るく</h3></div></li>
+        <li><span class="ic"><svg aria-hidden="true"><use href="#i-smile"/></svg></span><div><h3>写真の笑顔に自信を</h3></div></li>
+        <li><span class="ic"><svg aria-hidden="true"><use href="#i-cal"/></svg></span><div><h3>運動の前後に立ち寄れる</h3></div></li>
+      </ul>
+    </div>
+    <div class="wh-card rv">
+      <p class="wh-head">＜ セルフホワイトニングメニュー ＞</p>
+      <p class="tag">女性専用</p>
+      <h3>セルフホワイトニング<br>初回お試し体験</h3>
+      <p>カウンセリング＋施術込み。無理な勧誘はありません。</p>
+      <p class="wh-price"><s>通常 4,950円</s><b>¥0</b><small>※回数券購入で初回無料</small></p>
+      <a class="btn btn--block btn--lg" data-link="whitening" href="https://arvo-4ef22.web.app/" target="_blank" rel="noopener">ホワイトニングを詳しく見る<span class="chip"><svg aria-hidden="true"><use href="#i-out"/></svg></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== お客さまの声 ===== -->
+<section class="sec" id="voices">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <p class="eyebrow">お客さまの声</p>
+      <h2 class="h2">通いはじめた方の声</h2>
+    </div>
+    <div class="voices">
+      <article class="voice rv"><h3>運動が苦手だった私も。</h3><p>「レッスンが楽しくて自然と通えるように。体型も変わり、褒められることが増えました。」</p></article>
+      <article class="voice rv"><h3>姿勢から、毎日が変わった。</h3><p>「マシンピラティスで姿勢が改善。腰も楽になり、毎日が快適です。」</p></article>
+      <article class="voice rv"><h3>自分に合う組み合わせで。</h3><p>「グループとパーソナルの組み合わせで、一番変化を実感できています。」</p></article>
+    </div>
+    <p class="note center">掲載の声は個人の感想であり、効果や変化には個人差があります。</p>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="sec faq-sec" id="faq">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <p class="eyebrow">よくあるご質問</p>
+      <h2 class="h2">よくあるご質問</h2>
+    </div>
+    <div class="faq rv">
+      <details><summary><span class="q">Q</span>50代で運動は久しぶりです。ついていけますか？<span class="pm"><svg aria-hidden="true"><use href="#i-plus"/></svg></span></summary><p class="a">大丈夫です。カウンセリングで体調をお聞きし、いまの身体に合わせてご案内します。</p></details>
+      <details><summary><span class="q">Q</span>腰や膝に不安があっても参加できますか？<span class="pm"><svg aria-hidden="true"><use href="#i-plus"/></svg></span></summary><p class="a">動きを調整しながら進めます。通院中・持病のある方は、事前に医師へご相談ください。</p></details>
+      <details><summary><span class="q">Q</span>夜は何時まで通えますか？<span class="pm"><svg aria-hidden="true"><use href="#i-plus"/></svg></span></summary><p class="a">平日は21:15まで、土曜は14:40まで。日曜は特別クラスです。</p></details>
+      <details><summary><span class="q">Q</span>服装や持ち物は？<span class="pm"><svg aria-hidden="true"><use href="#i-plus"/></svg></span></summary><p class="a">動きやすい服装、タオル、お飲み物をお持ちください。</p></details>
+      <details><summary><span class="q">Q</span>体験の料金はいくらですか？<span class="pm"><svg aria-hidden="true"><use href="#i-plus"/></svg></span></summary><p class="a">ピラティスパーソナル体験は1回4,400円（お一人様1回まで）です。</p></details>
+      <details><summary><span class="q">Q</span>予約はどうすればいいですか？<span class="pm"><svg aria-hidden="true"><use href="#i-plus"/></svg></span></summary><p class="a"><a data-link="line" href="https://lin.ee/SpYlcYa" target="_blank" rel="noopener">LINE公式アカウント</a>を友だち追加し、ご希望の日時をお送りください。</p></details>
+      <details><summary><span class="q">Q</span>ホワイトニングは男性も利用できますか？<span class="pm"><svg aria-hidden="true"><use href="#i-plus"/></svg></span></summary><p class="a">いいえ、女性専用です。詳しくは<a data-link="whitening" href="https://arvo-4ef22.web.app/" target="_blank" rel="noopener">ホワイトニング専用ページ</a>をご覧ください。</p></details>
+      <details><summary><span class="q">Q</span>スタジオはどこにありますか？<span class="pm"><svg aria-hidden="true"><use href="#i-plus"/></svg></span></summary><p class="a">〒641-0007 和歌山県和歌山市小雑賀805−1、オークワセントラルシティ内です。</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="sec cta" id="contact">
+  <div class="wrap cta-box">
+    <div class="rv">
+      <p class="eyebrow">体験のご予約</p>
+      <h2 class="h2">うまく説明できなくても、<br>大丈夫です。</h2>
+      <p class="lead">いまのお悩みを、そのままLINEで送ってください。</p>
+      <ol class="flow">
+        <li><b>1</b>LINEで友だち追加</li>
+        <li><b>2</b>希望日・気になることを送信</li>
+        <li><b>3</b>スタジオからの返信で予約確定</li>
+      </ol>
+    </div>
+    <div class="cta-card rv">
+      <div class="trial">
+        <p class="lbl">ピラティスパーソナル体験<small>お一人様1回まで</small></p>
+        <p class="val">4,400<small>円</small></p>
+      </div>
+      <a class="btn btn--line btn--block btn--lg" data-link="line" href="https://lin.ee/SpYlcYa" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-line"/></svg>LINEで体験を予約する<span class="chip"><svg aria-hidden="true"><use href="#i-out"/></svg></span></a>
+      <a class="btn btn--ghost btn--block alt" data-link="instagram" href="https://www.instagram.com/arvo_wakayama/" target="_blank" rel="noopener">Instagramを見る<span class="chip"><svg aria-hidden="true"><use href="#i-ig"/></svg></span></a>
+      <p class="note">空き状況・予約確定はスタジオからの返信でご確認ください。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== アクセス ===== -->
+<section class="sec" id="access">
+  <div class="wrap access-grid">
+    <div class="access-map rv"><iframe src="https://www.google.com/maps?q=%E3%82%AA%E3%83%BC%E3%82%AF%E3%83%AF%E3%82%BB%E3%83%B3%E3%83%88%E3%83%A9%E3%83%AB%E3%82%B7%E3%83%86%E3%82%A3%E5%92%8C%E6%AD%8C%E5%B1%B1%E5%BA%97&amp;output=embed" title="ARVO和歌山の地図" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    <div class="rv">
+      <p class="eyebrow">アクセス</p>
+      <h2 class="h2">オークワセントラルシティ内</h2>
+      <p class="addr"><b>ARVO和歌山</b>〒641-0007<br>和歌山県和歌山市小雑賀805−1<br>オークワセントラルシティ内</p>
+      <p class="addr-hours">月〜金 10:00〜21:15 ／ 土 10:00〜14:40 ／ 日 特別クラス</p>
+      <div class="btn-row"><a class="btn btn--dark" href="https://www.google.com/maps/place/%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%E3%82%AA%E3%83%BC%E3%82%AF%E3%83%AF+%E3%82%BB%E3%83%B3%E3%83%88%E3%83%A9%E3%83%AB%E3%82%B7%E3%83%86%E3%82%A3%E5%92%8C%E6%AD%8C%E5%B1%B1%E5%BA%97/@34.195316,135.18336,16z" target="_blank" rel="noopener">Googleマップで開く<span class="chip"><svg aria-hidden="true"><use href="#i-out"/></svg></span></a></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft-in">
+      <a class="logo" href="#top"><b>ARVO</b><small>女性専用フィットネス｜和歌山</small></a>
+      <nav class="ft-nav" aria-label="フッターメニュー">
+        <a href="#reasons">ARVOの特長</a><a href="#studio">スタジオ</a><a href="#night">夜のレッスン</a><a href="#lessons">レッスン</a><a href="#price">料金</a><a href="#fasting">ファスティング</a><a href="#faq">よくある質問</a>
+        <a data-link="whitening" href="https://arvo-4ef22.web.app/" target="_blank" rel="noopener">セルフホワイトニング ↗</a>
+        <a data-link="instagram" href="https://www.instagram.com/arvo_wakayama/" target="_blank" rel="noopener">Instagram ↗</a>
+        <a data-link="line" href="https://lin.ee/SpYlcYa" target="_blank" rel="noopener">LINE公式 ↗</a>
+      </nav>
+    </div>
+    <small>© ARVO WAKAYAMA</small>
+  </div>
+</footer>
+
+<div class="fix-cta" id="fixCta">
+  <a class="btn btn--line" data-link="line" href="https://lin.ee/SpYlcYa" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-line"/></svg>LINEで体験予約（4,400円）<span class="chip"><svg aria-hidden="true"><use href="#i-out"/></svg></span></a>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
