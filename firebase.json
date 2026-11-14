@@ -6,17 +6,29 @@
       "ignore": [
         "firebase.json",
         "**/.*",
-        "**/node_modules/**"
+        "**/node_modules/**",
+        "src/**",
+        "tools/**"
       ],
       "cleanUrls": true,
       "headers": [
         {
           "source": "**/*.@(webp|png|jpg|svg|ico)",
-          "headers": [{ "key": "Cache-Control", "value": "public, max-age=604800" }]
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "public, max-age=604800"
+            }
+          ]
         },
         {
           "source": "**/*.@(css|js)",
-          "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600" }]
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "public, max-age=3600"
+            }
+          ]
         }
       ]
     }

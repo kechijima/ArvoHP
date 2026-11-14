@@ -79,9 +79,9 @@ h1,h2,h3,p{margin:0}
 .hd-in{display:flex;align-items:center;justify-content:space-between;height:78px}
 .logo{text-decoration:none;line-height:1;color:var(--ink)}
 .logo b{display:block;font-family:var(--en);font-weight:800;font-size:28px;letter-spacing:.06em}
-.logo small{display:block;font-size:11px;font-weight:500;letter-spacing:.18em;margin-top:5px;color:var(--ink-soft)}
-.nav{display:flex;align-items:center;gap:28px}
-.nav a{text-decoration:none;font-size:15px;font-weight:500}
+.logo small{white-space:nowrap;display:block;font-size:11px;font-weight:500;letter-spacing:.18em;margin-top:5px;color:var(--ink-soft)}
+.nav{display:flex;align-items:center;gap:22px}
+.nav a{text-decoration:none;font-size:15px;font-weight:500;white-space:nowrap}
 .nav a:not(.btn):hover{color:var(--accent-dp)}
 .nav .btn{min-height:50px;font-size:15px;padding-left:22px;color:#fff}
 .nav .btn .chip{width:36px;height:36px}
@@ -94,7 +94,7 @@ h1,h2,h3,p{margin:0}
   radial-gradient(50% 50% at 0 100%,#f3e2cd,transparent 70%),var(--cream)}
 .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,5vw,64px);align-items:center}
 .hero-tag{display:inline-flex;align-items:center;gap:10px;font-size:15px;font-weight:700;color:var(--accent-dp);background:#fff;border-radius:999px;padding:8px 18px;box-shadow:0 1px 0 var(--line)}
-.hero h1 .nw{white-space:nowrap}
+.hero h1 .nw,.h2 .nw{white-space:nowrap}
 .hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(30px,4.6vw,56px);line-height:1.5;letter-spacing:.06em;margin-top:24px}
 .hero h1 em{font-style:normal;color:var(--accent-dp);background:linear-gradient(transparent 70%,var(--accent-lt) 70%)}
 .hero-lead{font-size:clamp(17px,1.8vw,19px);margin-top:24px;line-height:2.05;color:var(--ink-soft)}
@@ -303,6 +303,53 @@ h1,h2,h3,p{margin:0}
 .ft-nav a:hover{color:var(--accent-lt)}
 .ft small{display:block;margin-top:40px;font-size:14px;color:rgba(255,255,255,.6)}
 
+
+/* ---------- スタジオ紹介 ---------- */
+.gallery-sec{background:#fff}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.gallery figure{margin:0;border-radius:22px;overflow:hidden;position:relative;aspect-ratio:3/4;background:var(--cream-2);box-shadow:var(--shadow)}
+.gallery img{width:100%;height:100%;object-fit:cover}
+.gallery figcaption{position:absolute;left:12px;bottom:12px;background:rgba(255,255,255,.92);border-radius:999px;padding:4px 14px;font-size:15px;font-weight:700}
+
+/* ---------- ファスティング ---------- */
+.fasting{background:linear-gradient(160deg,var(--cream-2),#fbeedd)}
+.fs-badge{display:table;margin:14px auto 0;background:var(--grad);color:#fff;font-weight:700;font-size:15px;letter-spacing:.1em;border-radius:999px;padding:4px 18px}
+.fs-worries{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:0 auto;padding:0;list-style:none;max-width:860px}
+.fs-worries li{display:flex;align-items:center;gap:8px;background:#fff;border-radius:999px;padding:10px 20px;font-weight:700;font-size:16px;box-shadow:0 1px 0 var(--line)}
+.fs-worries svg{width:18px;height:18px;color:var(--accent);flex:none}
+.fs-sub{font-family:var(--serif);font-size:clamp(22px,2.6vw,27px);text-align:center;margin:clamp(48px,7vw,72px) 0 24px}
+.fs-pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.fs-card{background:#fff;border-radius:24px;padding:28px 26px;box-shadow:0 1px 0 var(--line)}
+.fs-card .n{font-family:var(--en);font-weight:800;font-size:28px;color:var(--accent);line-height:1}
+.fs-card h4{font-size:20px;margin:12px 0 0}
+.fs-card p{font-size:16px;color:var(--ink-soft);margin-top:8px;line-height:1.85}
+.fs-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:0;padding:0;list-style:none;counter-reset:fs}
+.fs-steps li{position:relative;background:#fff;border-radius:24px;padding:26px 24px;box-shadow:0 1px 0 var(--line)}
+.fs-steps .m{display:inline-block;background:var(--brown);color:#fff;border-radius:999px;padding:2px 14px;font-size:14px;font-weight:700}
+.fs-steps b{display:block;font-size:20px;margin-top:12px}
+.fs-steps p{font-size:16px;color:var(--ink-soft);margin-top:6px;line-height:1.85}
+.fs-support{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,56px);align-items:center;margin-top:clamp(48px,7vw,72px)}
+.fs-phones{display:flex;gap:16px;justify-content:center;align-items:flex-start}
+.fs-phones img{width:44%;max-width:200px;border-radius:24px;box-shadow:var(--shadow);border:6px solid #fff}
+.fs-phones img:last-child{margin-top:40px}
+.fs-support-list{display:grid;gap:14px;margin:0;padding:0;list-style:none}
+.fs-support-list li{display:flex;gap:14px;background:#fff;border-radius:20px;padding:20px 22px;font-size:16px;color:var(--ink-soft);line-height:1.8}
+.fs-support-list svg{flex:none;width:22px;height:22px;color:var(--accent);margin-top:4px}
+.fs-support-list b{display:block;color:var(--ink);font-size:18px}
+.fs-price{display:grid;grid-template-columns:1fr 1fr;gap:20px 28px;margin-top:clamp(48px,7vw,72px);background:#fff;border-radius:28px;padding:clamp(28px,4vw,44px);box-shadow:var(--shadow)}
+.fs-price .tag{font-weight:700;font-size:16px;letter-spacing:.08em;color:var(--accent-dp)}
+.fs-normal{margin-top:12px;font-size:16px;color:var(--ink-soft)}
+.fs-normal s{font-family:var(--en);font-weight:700}
+.fs-sale{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;margin-top:6px;padding:18px 22px;border-radius:20px;background:linear-gradient(110deg,#fff4de,#ffe1ba)}
+.fs-sale .lbl{font-weight:700;font-size:17px;width:100%}
+.fs-sale b{font-family:var(--en);font-weight:800;font-size:46px;line-height:1;color:var(--accent-dp)}
+.fs-sale .off{background:var(--accent-dp);color:#fff;font-family:var(--en);font-weight:800;font-size:16px;border-radius:8px;padding:4px 10px}
+.fs-option{border-left:1px solid var(--line);padding-left:28px}
+.fs-option h4{font-size:19px;margin:6px 0 0}
+.fs-option p{font-size:15px;color:var(--ink-soft);margin-top:6px}
+.fs-option .ptable{margin-top:8px}
+.fs-price .btn{grid-column:1/-1}
+
 /* ---------- 固定CTA（スマホ） ---------- */
 .fix-cta{display:none}
 
@@ -312,8 +359,22 @@ h1,h2,h3,p{margin:0}
 @media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
 
 /* ---------- レスポンシブ ---------- */
+@media (min-width:961px) and (max-width:1120px){
+  .nav{position:fixed;inset:78px 0 auto;flex-direction:column;align-items:stretch;gap:0;background:var(--cream);padding:10px 20px 24px;box-shadow:0 20px 30px -20px rgba(0,0,0,.25);display:none}
+  .nav.is-open{display:flex}
+  .nav a{padding:16px 4px;border-bottom:1px solid var(--line);font-size:17px}
+  .nav .btn{margin-top:16px;border:0;justify-content:space-between}
+  .menu-btn{display:grid;place-items:center;width:52px;height:52px;border-radius:50%;border:0;background:var(--brown);color:#fff;cursor:pointer}
+  .menu-btn svg{width:24px;height:24px}
+}
+@media (min-width:1121px) and (max-width:1240px){
+  .nav{gap:16px}
+  .nav a{font-size:14px}
+  .nav .btn{padding-left:18px}
+}
 @media (max-width:1040px){
-  .steps,.reasons{grid-template-columns:1fr 1fr}
+  .steps,.reasons,.gallery{grid-template-columns:1fr 1fr}
+  .fs-pillars,.fs-steps{grid-template-columns:1fr}
 }
 @media (max-width:960px){
   .nav{position:fixed;inset:78px 0 auto;flex-direction:column;align-items:stretch;gap:0;background:var(--cream);padding:10px 20px 24px;box-shadow:0 20px 30px -20px rgba(0,0,0,.25);display:none}
@@ -343,6 +404,8 @@ h1,h2,h3,p{margin:0}
   .hd:not(.is-scrolled):not(.menu-open) .logo small{color:rgba(255,255,255,.85)}
   .about-img{aspect-ratio:16/11}
   .voices{grid-template-columns:1fr}
+  .fs-support,.fs-price{grid-template-columns:1fr}
+  .fs-option{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:20px}
   .result{position:static}
   .fix-cta{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:40;transform:translateY(140%);transition:transform .35s ease}
   .fix-cta.is-show{transform:none}
@@ -353,6 +416,9 @@ h1,h2,h3,p{margin:0}
   body{font-size:16px}
   .sp{display:inline}
   .steps,.reasons{grid-template-columns:1fr}
+  .gallery{gap:10px}
+  .gallery figcaption{font-size:14px;left:8px;bottom:8px;padding:3px 10px}
+  .fs-worries li{font-size:15px;padding:8px 16px}
   .btn{width:100%}
   .btn-row{flex-direction:column}
   .faq summary{font-size:17px;padding:20px}
